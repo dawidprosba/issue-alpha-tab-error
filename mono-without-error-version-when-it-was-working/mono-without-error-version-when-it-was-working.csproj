@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AlphaTab" Version="1.8.0-alpha.1632" />
+      <PackageReference Include="AlphaTab" Version="1.8.0-alpha.1640" />
     </ItemGroup>
 
     <ItemGroup>

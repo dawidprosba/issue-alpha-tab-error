@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alpha-tab-error-minimal-reproducable", "alpha-tab-error-minimal-reproducable\alpha-tab-error-minimal-reproducable.csproj", "{6ADA302C-961A-427D-A208-6EA22281EA6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mono-with-error-latest-version", "mono-with-error-latest-version\mono-with-error-latest-version.csproj", "{6ADA302C-961A-427D-A208-6EA22281EA6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alpha-tab-no-error-same-code", "alpha-tab-no-error-same-code\alpha-tab-no-error-same-code.csproj", "{723BC840-4142-47C7-B867-01A79D5B6088}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net90-no-error", "net90-no-error\net90-no-error.csproj", "{723BC840-4142-47C7-B867-01A79D5B6088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alpha-tab-latest-working-version-with-mono", "alpha-tab-latest-working-version-with-mono\alpha-tab-latest-working-version-with-mono.csproj", "{7159B3D7-14E5-468A-BEC0-877E74016060}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mono-without-error-version-when-it-was-working", "mono-without-error-version-when-it-was-working\mono-without-error-version-when-it-was-working.csproj", "{7159B3D7-14E5-468A-BEC0-877E74016060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
