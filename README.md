@@ -10,12 +10,11 @@ Error: Collection was modified; enumeration operation may not execute.
 
 ## Projects
 
-| Project | Target | Result |
-|---|---|---|
-| `alpha-tab-error-minimal-reproducable` | `net481` (Mono) | **Throws** |
-| `alpha-tab-no-error-same-code` | `net9.0` | **Works** |
-
-Both projects have **identical `Program.cs`** and both reference **AlphaTab `1.9.0-alpha.1813`**.
+| Project | Target | AlphaTab Version | Result |
+|---|---|---|---|
+| `mono-with-error-latest-version` | `net481` (Mono) | `1.9.0-alpha.1813` | **Throws** |
+| `mono-without-error-version-when-it-was-working` | `net481` (Mono) | `1.8.0-alpha.1640` | **Works** |
+| `net90-no-error` | `net9.0` | `1.9.0-alpha.1813` | **Works** |
 
 
 ## What the code does
