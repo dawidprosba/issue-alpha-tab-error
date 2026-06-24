@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alpha-tab-error-minimal-rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alpha-tab-no-error-same-code", "alpha-tab-no-error-same-code\alpha-tab-no-error-same-code.csproj", "{723BC840-4142-47C7-B867-01A79D5B6088}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alpha-tab-latest-working-version-with-mono", "alpha-tab-latest-working-version-with-mono\alpha-tab-latest-working-version-with-mono.csproj", "{7159B3D7-14E5-468A-BEC0-877E74016060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{723BC840-4142-47C7-B867-01A79D5B6088}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{723BC840-4142-47C7-B867-01A79D5B6088}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{723BC840-4142-47C7-B867-01A79D5B6088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7159B3D7-14E5-468A-BEC0-877E74016060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7159B3D7-14E5-468A-BEC0-877E74016060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7159B3D7-14E5-468A-BEC0-877E74016060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7159B3D7-14E5-468A-BEC0-877E74016060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
