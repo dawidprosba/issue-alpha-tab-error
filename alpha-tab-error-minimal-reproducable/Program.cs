@@ -13,12 +13,15 @@ using Font = AlphaTab.Model.Font;
 using AlphaTabBounds = AlphaTab.Rendering.Utils.Bounds;
 using Environment = AlphaTab.Environment;
 
+AlphaTab.Logger.Log = new ConsoleLogger();
 Environment.RenderEngines.Set("null", new RenderEngineFactory(false, () => new NullCanvas()));
+Environment.PrintEnvironmentInfo();
 
 var settings = new Settings();
 settings.Core.Engine = "null";
 settings.Core.UseWorkers = false;
 settings.Core.EnableLazyLoading = false;
+settings.Core.LogLevel = LogLevel.Debug;
 
 var facade = new MinimalFacade(width: 1200);
 var api = new AlphaTabApiBase<Settings>(facade, settings);
@@ -60,6 +63,16 @@ class NullCanvas : ICanvas
     public void BezierCurveTo(double c1x, double c1y, double c2x, double c2y, double x, double y) { }
     public void QuadraticCurveTo(double cx, double cy, double x, double y) { }
     public void Destroy() { }
+}
+
+// ── Console logger ────────────────────────────────────────────────────────────
+
+class ConsoleLogger : AlphaTab.ILogger
+{
+    public void Debug(string tag, string message, params object?[] args) => Console.WriteLine($"[DBG] {tag}: {message}");
+    public void Info(string tag, string message, params object?[] args)  => Console.WriteLine($"[INF] {tag}: {message}");
+    public void Warning(string tag, string message, params object?[] args) => Console.WriteLine($"[WRN] {tag}: {message}");
+    public void Error(string tag, string message, params object?[] args) => Console.WriteLine($"[ERR] {tag}: {message}");
 }
 
 // ── Minimal IUiFacade plumbing ────────────────────────────────────────────────
